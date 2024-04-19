@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Salud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>That Healthy Flow</h1>
+
+    <h2>Crear Cuenta</h2>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password"><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido"><br>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" min="0"><br>
+
+        <label for="objetivo">Objetivo:</label>
+        <input type="text" id="objetivo"><br>
+
+        <button onclick="crearCuenta()">Crear Cuenta</button>
+    </div>
+
+    <h2>Dietas y Recetas</h2>
+    <div>
+        <label for="caloriasDiarias">Calorías Diarias:</label>
+        <input type="number" id="caloriasDiarias"><br>
+        
+        <label for="alimentacion">Alimentación:</label>
+        <input type="text" id="alimentacion"><br>
+
+        <label for="restricciones">Restricciones:</label>
+        <input type="text" id="restricciones"><br>
+
+        <button onclick="buscarRecetas()">Buscar Recetas</button>
+        <ul id="listaRecetas"></ul> 
+    </div>
+
+    <h2>Calculadora de Índice de Masa Corporal (IMC)</h2>
+    <div>
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" min="0"><br>
+        
+        <label for="pesoIMC">Peso (kg):</label>
+        <input type="number" id="pesoIMC" min="0"><br>
+
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <div id="resultadoIMC"></div> 
+    </div>
+
+    <h2>Seguimiento de Hábitos</h2>
+    <div>
+        <label for="agua">Consumo de Agua (ml):</label>
+        <input type="number" id="agua"><br>
+        
+        <label for="sueno">Horas de Sueño:</label>
+        <input type="number" id="sueno"><br>
+
+        <label for="actividad">Minutos de Actividad Física:</label>
+        <input type="number" id="actividad"><br>
+
+        <button onclick="guardarHabitos()">Guardar Hábitos</button>
+    </div>
+
+    <div id="mensaje"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
